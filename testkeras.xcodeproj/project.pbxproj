@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		620623562C7B5814001903F7 /* libmatio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 620623552C7B5814001903F7 /* libmatio.a */; };
+		6216BFE62C7E10BE00470BA4 /* print_pb_structure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6216BFE52C7E10BE00470BA4 /* print_pb_structure.cpp */; };
+		6216BFE82C7E141300470BA4 /* test_prediction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6216BFE72C7E141300470BA4 /* test_prediction.cpp */; };
+		622811E92C7A16C10022694A /* libtensorflow_framework.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 622811E62C7A145D0022694A /* libtensorflow_framework.2.dylib */; };
+		622811EA2C7A16C10022694A /* libtensorflow_cc.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 622811E52C7A145D0022694A /* libtensorflow_cc.2.dylib */; };
+		625F9C052C7EF23200000983 /* inference_with_mat(fail).cpp in Sources */ = {isa = PBXBuildFile; fileRef = 625F9C042C7EF23200000983 /* inference_with_mat(fail).cpp */; };
+		62A47D052C79A44500684951 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 62A47D042C79A44500684951 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		62A47CFF2C79A44500684951 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		620623552C7B5814001903F7 /* libmatio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmatio.a; path = ../../../../../../../usr/local/lib/libmatio.a; sourceTree = "<group>"; };
+		6216BFE52C7E10BE00470BA4 /* print_pb_structure.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = print_pb_structure.cpp; sourceTree = "<group>"; };
+		6216BFE72C7E141300470BA4 /* test_prediction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_prediction.cpp; sourceTree = "<group>"; };
+		622811E52C7A145D0022694A /* libtensorflow_cc.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtensorflow_cc.2.dylib; path = "../../../../../../../usr/local/lib/python3.12/site-packages/tensorflow/libtensorflow_cc.2.dylib"; sourceTree = "<group>"; };
+		622811E62C7A145D0022694A /* libtensorflow_framework.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtensorflow_framework.2.dylib; path = "../../../../../../../usr/local/lib/python3.12/site-packages/tensorflow/libtensorflow_framework.2.dylib"; sourceTree = "<group>"; };
+		625F9C042C7EF23200000983 /* inference_with_mat(fail).cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "inference_with_mat(fail).cpp"; sourceTree = "<group>"; };
+		62A47D012C79A44500684951 /* testkeras */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testkeras; sourceTree = BUILT_PRODUCTS_DIR; };
+		62A47D042C79A44500684951 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		62EFD9122C79A65500F80BE3 /* _pywrap_tensorflow_internal.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = _pywrap_tensorflow_internal.so; path = "../../../../../../../usr/local/Caskroom/miniconda/base/envs/py2/lib/python2.7/site-packages/tensorflow/python/_pywrap_tensorflow_internal.so"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62A47CFE2C79A44500684951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				620623562C7B5814001903F7 /* libmatio.a in Frameworks */,
+				622811E92C7A16C10022694A /* libtensorflow_framework.2.dylib in Frameworks */,
+				622811EA2C7A16C10022694A /* libtensorflow_cc.2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62A47CF82C79A44500684951 = {
+			isa = PBXGroup;
+			children = (
+				62A47D032C79A44500684951 /* testkeras */,
+				62A47D022C79A44500684951 /* Products */,
+				62EFD9112C79A65400F80BE3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		62A47D022C79A44500684951 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62A47D012C79A44500684951 /* testkeras */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62A47D032C79A44500684951 /* testkeras */ = {
+			isa = PBXGroup;
+			children = (
+				62A47D042C79A44500684951 /* main.cpp */,
+				625F9C042C7EF23200000983 /* inference_with_mat(fail).cpp */,
+				6216BFE52C7E10BE00470BA4 /* print_pb_structure.cpp */,
+				6216BFE72C7E141300470BA4 /* test_prediction.cpp */,
+			);
+			path = testkeras;
+			sourceTree = "<group>";
+		};
+		62EFD9112C79A65400F80BE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				620623552C7B5814001903F7 /* libmatio.a */,
+				622811E52C7A145D0022694A /* libtensorflow_cc.2.dylib */,
+				622811E62C7A145D0022694A /* libtensorflow_framework.2.dylib */,
+				62EFD9122C79A65500F80BE3 /* _pywrap_tensorflow_internal.so */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62A47D002C79A44500684951 /* testkeras */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62A47D082C79A44500684951 /* Build configuration list for PBXNativeTarget "testkeras" */;
+			buildPhases = (
+				62A47CFD2C79A44500684951 /* Sources */,
+				62A47CFE2C79A44500684951 /* Frameworks */,
+				62A47CFF2C79A44500684951 /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testkeras;
+			productName = testkeras;
+			productReference = 62A47D012C79A44500684951 /* testkeras */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62A47CF92C79A44500684951 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					62A47D002C79A44500684951 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 62A47CFC2C79A44500684951 /* Build configuration list for PBXProject "testkeras" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62A47CF82C79A44500684951;
+			productRefGroup = 62A47D022C79A44500684951 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62A47D002C79A44500684951 /* testkeras */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62A47CFD2C79A44500684951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6216BFE82C7E141300470BA4 /* test_prediction.cpp in Sources */,
+				625F9C052C7EF23200000983 /* inference_with_mat(fail).cpp in Sources */,
+				62A47D052C79A44500684951 /* main.cpp in Sources */,
+				6216BFE62C7E10BE00470BA4 /* print_pb_structure.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		62A47D062C79A44500684951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++23";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/lib/python3.12/site-packages/tensorflow/include",
+					/usr/local/include,
+				);
+				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib/python3.12/site-packages/tensorflow";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/python3.12/site-packages/tensorflow",
+					/usr/local/lib,
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		62A47D072C79A44500684951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++23";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/lib/python3.12/site-packages/tensorflow/include",
+					/usr/local/include,
+				);
+				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib/python3.12/site-packages/tensorflow";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/python3.12/site-packages/tensorflow",
+					/usr/local/lib,
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		62A47D092C79A44500684951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/lib/python3.12/site-packages/tensorflow/include",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/python3.12/site-packages/tensorflow",
+					/usr/local/lib,
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		62A47D0A2C79A44500684951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/lib/python3.12/site-packages/tensorflow/include",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/python3.12/site-packages/tensorflow",
+					/usr/local/lib,
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62A47CFC2C79A44500684951 /* Build configuration list for PBXProject "testkeras" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62A47D062C79A44500684951 /* Debug */,
+				62A47D072C79A44500684951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62A47D082C79A44500684951 /* Build configuration list for PBXNativeTarget "testkeras" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62A47D092C79A44500684951 /* Debug */,
+				62A47D0A2C79A44500684951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62A47CF92C79A44500684951 /* Project object */;
+}
